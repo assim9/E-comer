@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Account</title>
+  </head>
+  <body>
+    <!-- NAV -->
+    <div class="container">
+      <div class="navbar">
+        <div class="search-container search-icon">
+          <input
+            type="text"
+            name="search"
+            placeholder="Search"
+            class="search-input"
+          />
+          <a href="#" class="search-btn">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+        <div class="name">Shop Now</div>
+        <div class="icons">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-user"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <img src="/imgs/menu.png" class="menu-icon" />
+      </div>
+      <!-- MENU -->
+      <div class="menu">
+        <ul class="links">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="producte.html">Products</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- account -->
+    <div class="account-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img src="/imgs/exclusive.png" width="100%" />
+          </div>
+          <div class="col-2">
+            <div class="form-container">
+              <div class="from-btn">
+                <span onclick="login()">Login</span>
+                <span onclick="register()">Register</span>
+                <h1 id="Indicator"></h1>
+              </div>
+              <form id="LoginForm">
+                <input type="text" placeholder="Username" />
+                <input type="password" placeholder="password" />
+                <button type="submit" class="btn">Login</button>
+                <a href="#">Forgot password</a>
+              </form>
+              <form id="RegForm">
+                <input type="text" placeholder="Username" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="password" />
+                <button type="submit" class="btn">Register</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Navigations</h3>
+            <ul>
+              <li>Sell online</li>
+              <li>Features</li>
+              <li>Shopping cart</li>
+              <li>Store builder</li>
+            </ul>
+          </div>
+          <div class="footer-col-3">
+            <h3>Our services</h3>
+            <ul>
+              <li>Mobile commerce</li>
+              <li>Blog Post</li>
+              <li>Dropshipping</li>
+              <li>Website devment</li>
+            </ul>
+          </div>
+          <div class="footer-col-2">
+            <h3>Promo</h3>
+            <img src="/imgs/hero_1.jpg" />
+            <p>Promo from nuary 15 -- 25, 2021</p>
+            <a href="#">Finding Your Perfect Shoes</a>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+            <h2>Subscribe</h2>
+            <form>
+              <input type="email" placeholder="Input Email for Beta" required />
+              <button
+                class="button btnn"
+                type="submit"
+                value="Request"
+                role="button"
+              >
+                S E N D
+              </button>
+            </form>
+          </div>
+        </div>
+        <hr />
+        <p class="copy">
+          Copyright 2021 - by
+          <span><i class="fa-solid fa-heart"></i></span> asim selim
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var LoginForm = document.getElementById("LoginForm");
+      var RegForm = document.getElementById ("RegForm");
+      var Indicator = document.getElementById("Indicator");
+
+      function register() {
+
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+      }
+      
+      function login() {
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+      }
+
+    </script>
+  </body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -46,14 +46,14 @@
             </li>
           </ul>
         </div>
-        <img src="/imgs/menu.png" class="menu-icon" />
+        <img src="./imgs/menu.png" class="menu-icon" />
       </div>
       <!-- MENU -->
       <div class="menu">
         <ul class="links">
-          <li><a href="Home.html">Home</a></li>
-          <li><a href="producte.html">Products</a></li>
-          <li><a href="shop.html">Shop</a></li>
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./producte.html">Products</a></li>
+          <li><a href="./shop.html">Shop</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">Account</a></li>
@@ -64,19 +64,19 @@
     <div class="small-container single-product">
       <div class="row">
         <div class="col-2">
-          <img src="/imgs/gallery-1.jpg" width="100%" id="ProductImg" />
+          <img src="./imgs/gallery-1.jpg" width="100%" id="ProductImg" />
           <div class="small-img-row">
             <div class="small-img-col">
-              <img src="/imgs/gallery-1.jpg" width="100%" class="small-img" />
+              <img src="./imgs/gallery-1.jpg" width="100%" class="small-img" />
             </div>
             <div class="small-img-col">
-              <img src="/imgs/gallery-2.jpg" width="100%" class="small-img" />
+              <img src="./imgs/gallery-2.jpg" width="100%" class="small-img" />
             </div>
             <div class="small-img-col">
-              <img src="/imgs/gallery-3.jpg" width="100%" class="small-img" />
+              <img src="./imgs/gallery-3.jpg" width="100%" class="small-img" />
             </div>
             <div class="small-img-col">
-              <img src="/imgs/gallery-4.jpg" width="100%" class="small-img" />
+              <img src="./imgs/gallery-4.jpg" width="100%" class="small-img" />
             </div>
           </div>
         </div>
@@ -115,7 +115,7 @@
     <div class="small-container">
       <div class="row">
         <div class="col-4">
-          <img src="/imgs/product-1.jpg" alt="" />
+          <img src="./imgs/product-1.jpg" alt="" />
           <h4>Red Printed T-Shirt</h4>
           <div class="rating">
             <i class="fa-solid fa-star"></i>
@@ -127,7 +127,7 @@
           <p>$50.00</p>
         </div>
         <div class="col-4">
-          <img src="/imgs/product-2.jpg" alt="" />
+          <img src="./imgs/product-2.jpg" alt="" />
           <h4>Black sports shoes</h4>
           <div class="rating">
             <i class="fa-solid fa-star"></i>
@@ -139,7 +139,7 @@
           <p>$36.00</p>
         </div>
         <div class="col-4">
-          <img src="/imgs/product-3.jpg" alt="" />
+          <img src="./imgs/product-3.jpg" alt="" />
           <h4>Gray sports pants</h4>
           <div class="rating">
             <i class="fa-solid fa-star"></i>
@@ -151,7 +151,7 @@
           <p>$40.00</p>
         </div>
         <div class="col-4">
-          <img src="/imgs/product-4.jpg" alt="" />
+          <img src="./imgs/product-4.jpg" alt="" />
           <h4>Navy polo T-Shirt</h4>
           <div class="rating">
             <i class="fa-solid fa-star"></i>
@@ -188,7 +188,7 @@
           </div>
           <div class="footer-col-2">
             <h3>Promo</h3>
-            <img src="/imgs/hero_1.jpg" />
+            <img src="./imgs/hero_1.jpg" />
             <p>Promo from nuary 15 -- 25, 2021</p>
             <a href="#">Finding Your Perfect Shoes</a>
           </div>
@@ -225,22 +225,18 @@
     <script>
       var ProductImg = document.getElementById("ProductImg");
       var SmllImg = document.getElementsByClassName("small-img");
-      SmllImg[0].onclick =function() 
-      {
+      SmllImg[0].onclick = function () {
         ProductImg.src = SmllImg[0].src;
-      }
-      SmllImg[1].onclick =function() 
-      {
+      };
+      SmllImg[1].onclick = function () {
         ProductImg.src = SmllImg[1].src;
-      }
-      SmllImg[2].onclick =function() 
-      {
+      };
+      SmllImg[2].onclick = function () {
         ProductImg.src = SmllImg[2].src;
-      }
-      SmllImg[3].onclick =function() 
-      {
+      };
+      SmllImg[3].onclick = function () {
         ProductImg.src = SmllImg[3].src;
-      }
+      };
     </script>
   </body>
 </html>

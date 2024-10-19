@@ -1,4 +1,3 @@
-# E-comer
 # E-commerce Project
 
 ![E-commerce](https://raw.githubusercontent.com/assim9/E-comer/refs/heads/main/2024-10-20.png) <!-- Replace with your project's logo -->
